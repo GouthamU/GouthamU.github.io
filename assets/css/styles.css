@@ -594,9 +594,7 @@ img{
   animation-timing-function: steps(1, end);
 }
 
-}
-
-html[data-theme="dark"] {
+  html[data-theme="dark"] {
   --first-color: #8ab4ff;
   --second-color: #e8eaed;
 }
@@ -646,3 +644,6 @@ html[data-theme="dark"] .contact__container {
 html[data-theme="dark"] .theme-toggle {
   border-color: rgba(255,255,255,0.2);
 }
+}
+
+
