@@ -595,3 +595,54 @@ img{
 }
 
 }
+
+html[data-theme="dark"] {
+  --first-color: #8ab4ff;
+  --second-color: #e8eaed;
+}
+
+html[data-theme="dark"] body {
+  background-color: #121212;
+  color: var(--second-color);
+}
+
+html[data-theme="dark"] .l-header {
+  background-color: #1e1e1e;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+html[data-theme="dark"] .nav__menu {
+  background-color: #1e1e1e;
+}
+
+html[data-theme="dark"] .home__social-icon,
+html[data-theme="dark"] .nav__logo,
+html[data-theme="dark"] .nav__link {
+  color: var(--second-color);
+}
+
+html[data-theme="dark"] .footer {
+  background-color: #1e1e1e;
+  color: var(--second-color);
+}
+
+html[data-theme="dark"] .skills__data,
+html[data-theme="dark"] .work__img,
+html[data-theme="dark"] .project__img,
+html[data-theme="dark"] .contact__container {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, .6);
+  border-color: #333;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: .4rem .6rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  border-color: rgba(255,255,255,0.2);
+}
