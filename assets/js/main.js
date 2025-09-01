@@ -56,30 +56,5 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-(function() {
-  const root = document.documentElement;
-  const btn = document.getElementById('theme-toggle');
-  const stored = localStorage.getItem('theme');
-
-  if (stored === 'dark') {
-    root.setAttribute('data-theme', 'dark');
-    if (btn) btn.innerHTML = "<i class='bx bx-sun'></i>";
-  }
-
-  if (btn) {
-    btn.addEventListener('click', () => {
-      const isDark = root.getAttribute('data-theme') === 'dark';
-      if (isDark) {
-        root.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-        btn.innerHTML = "<i class='bx bx-moon'></i>";
-      } else {
-        root.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        btn.innerHTML = "<i class='bx bx-sun'></i>";
-      }
-    });
-  }
-})();
 
 
